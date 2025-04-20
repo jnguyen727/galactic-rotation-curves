@@ -44,7 +44,6 @@ with open("/home/johnny/projects/galactic-rotation-curves/galactic-rotation-curv
             "SBbul":float(cols[9]),
         }
         records.append(record)
-        print(cols)
 print("Successfully read.")
 
 with open("all_galaxies.json", "w", encoding="utf-8") as out:
