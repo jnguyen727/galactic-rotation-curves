@@ -46,6 +46,7 @@ with open("/home/johnny/projects/galactic-rotation-curves/galactic-rotation-curv
         records.append(record)
 print("Successfully read.")
 
+# populates the all_galaxies.json with each galaxy
 with open("all_galaxies.json", "w", encoding="utf-8") as out:
     json.dump(records, out, indent=2)
 
