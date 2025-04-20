@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Galactic Rotation Curves Simulator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive 3D web app for exploring galactic rotation curves and the evidence for dark matter.  
+Built with React‑Three‑Fiber, D3, and KaTeX.
+Current work in progress.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Demo
 
-### `npm start`
+WIP
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Table of Contents
 
-### `npm test`
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [Data Sources](#data-sources)  
+- [Roadmap](#roadmap)  
+- [Contributing](#contributing)  
+- [License](#license)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone https://github.com/your-username/galactic-rotation-curves.git
+cd galactic-rotation-curves
+npm install
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The app will be available at http://localhost:3000.
+```
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Select a galaxy from the dropdown to load its observed rotation‑curve data.
 
-### `npm run eject`
+    Adjust disk mass and halo parameters via the control panel.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    View synchronized 3D orbits and 2D D3 rotation‑curve plots.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Toggle “Visible‑only” vs. “+ Dark Halo” modes to see how dark matter flattens the curve.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    Open “Scholar Mode” for live KaTeX derivations and code snippets.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Data Sources
 
-## Learn More
+All observational data come from the SPARC (Spitzer Photometry & Accurate Rotation Curves) mass‑model release (Lelli et al. 2016).
+Parsed JSON lives in data/:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    all_galaxies.json — combined dataset for all supported galaxies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    NGC2403.json, UGC05721.json, etc. — per‑galaxy arrays of radius & velocity measurements
 
-### Code Splitting
+See docs/data‑dictionary.md for field definitions.
+## Roadmap
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+A full 20‑week plan lives in ROADMAP.md (or link to your LaTeX/PDF).
+Weekly notebooks are in /notebook.
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+See CONTRIBUTING.md.
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License — see LICENSE.md for details.
