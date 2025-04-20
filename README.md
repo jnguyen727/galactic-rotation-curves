@@ -59,7 +59,7 @@ See docs/data‑dictionary.md for field definitions.
 
 Download or view the full 20‑week roadmap here:
 
-- [Galactic Rotation Curves Roadmap (PDF)](./docs/roadmap_darkmatter.pdf)
+- [Galactic Rotation Curves Roadmap (PDF)](./docs/Project.pdf)
 
 
 ## Contributing
