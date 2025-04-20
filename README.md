@@ -57,8 +57,10 @@ Parsed JSON lives in data/:
 See docs/data‑dictionary.md for field definitions.
 ## Roadmap
 
-A full 20‑week plan lives in ROADMAP.md (or link to your LaTeX/PDF).
-Weekly notebooks are in /notebook.
+Download or view the full 20‑week roadmap here:
+
+- [Galactic Rotation Curves Roadmap (PDF)](./docs/roadmap_darkmatter.pdf)
+
 
 ## Contributing
 
