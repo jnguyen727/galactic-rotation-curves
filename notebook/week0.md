@@ -31,5 +31,5 @@
 ## Week 1 Goals
 - Derive the exponential‑disk rotation formula in KaTeX.  
 - Sketch out your numeric integration approach in pseudocode.  
-- Fetch and convert a small rotation‑curve dataset into `data/`.  
+- Fetch and convert a small rotation‑curve dataset into `data/`. 
 - Stub out your disk‐curve function file for later implementation.
