@@ -4,9 +4,13 @@ import json
 
 print("Current working directory:", os.getcwd());
 
+# create our regex (dashed lines) for scanning dashes
 dash_re = re.compile(r'^-+$')
+
+# store our records to convert to json
 records = [];
 
+# loop to iterate over the file and parse each line into json type
 with open("/home/johnny/projects/galactic-rotation-curves/galactic-rotation-curves/tmp-sparc/data/MassModels_Lelli2016c.mrt", 'r') as f:
     # -- 1) Skip up until the first dash
     for line in f:
@@ -16,21 +20,27 @@ with open("/home/johnny/projects/galactic-rotation-curves/galactic-rotation-curv
     for line in f:
         if dash_re.match(line.strip()):
             break;
+    # -- 3) Skip up until the third dash
     for line in f:
         if dash_re.match(line.strip()):
             break;
+    # -- 4) Skip up until the fourth dash
     for line in f:
         if dash_re.match(line.strip()):
             break;
 
+    # remove trailing space
     data = line.rstrip('\n');
     
     # Parses each line into an array. 
     for line in f:
+        # clean now stores the strip of line
         clean = line.strip();
         if not clean:
             continue;
+        # splits the line into columns
         cols = clean.split()
+        # assign each column a specifier
         record = {
             "ID":   cols[0],
             "D":    float(cols[1]),
