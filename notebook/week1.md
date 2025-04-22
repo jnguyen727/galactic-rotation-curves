@@ -1,4 +1,4 @@
-# Week 1: Exponential-Desk Rotation Curve
+# Week 1: Exponential-Disk Rotation Curve
 
 $$ 
 v_{\rm disk}(r)
