@@ -14,6 +14,7 @@ describe('rotationCurveDisk stub', () => {
     it('initially returns all zeros', () => {
         const radii = [0.5, 1.0, 2.0];
         const result = rotationCurveDisk(radii, 10, 5);
+        // until i replace this stub guarantee me that i have zeroes
         expect(result).toEqual([0, 0, 0]);
     });
 });
