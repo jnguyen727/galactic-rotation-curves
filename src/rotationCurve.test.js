@@ -11,12 +11,12 @@ describe('rotationCurveDisk stub', () => {
         expect(Array.isArray(result)).toBe(true);
         expect(result).toHaveLength(radii.length);
     });
-    it('initially returns all zeros', () => {
-        const radii = [0.5, 1.0, 2.0];
-        const result = rotationCurveDisk(radii, 10, 5);
-        // until i replace this stub guarantee me that i have zeroes
-        expect(result).toEqual([0, 0, 0]);
-    });
+ //   it('initially returns all zeros', () => {
+ //       const radii = [0.5, 1.0, 2.0];
+ //       const result = rotationCurveDisk(radii, 10, 5);
+ //       // until i replace this stub guarantee me that i have zeroes
+ //       expect(result).toEqual([0, 0, 0]);
+ //   });
     it('matches analytic constant-density speeds within 1%', () => {
         const radii = [1, 2, 3];
         const Sigma0 = 1;
